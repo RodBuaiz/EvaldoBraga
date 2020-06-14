@@ -8,19 +8,7 @@ version: 0.1
 Tags: one-column, sticky-post, dark, black, fixed-width
 */
 
-/*
-
-Changelog
-
-0.5.0 	Initial design, uploaded to WordPress.org
-0.5.1	Added the awesome cufon styles to the h1, h2, and h3 classes. Looking into better font for readability, but I like how this one looks... If you don't like it, feel free to comment out the javascript in the header.php file about cufon.
-0.5.2	Changed the font that I was using to be a little more readable. Also changed the background color to match. <!--Weird huh?-->
-0.5.3	Reviewed the comment structure. Looks like everything works to me...
-0.5.4	Comments template has been added to page.php
-
-Notes: Font used in header files is "Capture It". It was designed by Koczman B‡lint and was downloaded from DaFont.com with use allowing web embedding.
-
-*/	
+	
 
 body { 
 	font-family:courier, monospace;
