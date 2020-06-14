@@ -158,7 +158,8 @@ var butz = document.getElementById('do-it');
 var mySound;
 butz.addEventListener('click',function(){
 	if(mySound && mySound.duration ) {
-		alert('!');
+		if(mySound.paused) mySound.resume();
+		else mySound.pause();
 	} else {
 		mySound = soundManager.createSound({
 		id: 'aSound',
