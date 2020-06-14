@@ -155,12 +155,16 @@ soundManager.setup({
   }
 });
 var butz = document.getElementById('do-it');
+var mySound;
 butz.addEventListener('click',function(){
-    var mySound = soundManager.createSound({
-      id: 'aSound',
-      url: 'https://rodbuaiz.github.io/EvaldoBraga/files/2010/03/a4_drama.jpg'
-    });
-    mySound.play();	
+	if(mySound.duration) {
+		alert('!');
+	} else {
+		mySound = soundManager.createSound({
+		id: 'aSound',
+		url: 'https://rodbuaiz.github.io/EvaldoBraga/files/2010/03/a4_drama.jpg'
+		}).play();	
+	}
 }); 
 
 </script></td>
