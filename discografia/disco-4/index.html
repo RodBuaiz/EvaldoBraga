@@ -1,7 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head profile="http://gmpg.org/xfn/11"><base href="/"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Evaldo Braga - O Ídolo Negro</title><link rel="icon" href="favicon.ico" type="image/ico"><style type="text/css" media="screen">
 		@import url( https://rodbuaiz.github.io/EvaldoBraga/wp-content/themes/evaldo/style.css );
-	</style><link rel="archives" title="December 1997" href="https://rodbuaiz.github.io/EvaldoBraga/1997/12/"><link rel="archives" title="November 1997" href="https://rodbuaiz.github.io/EvaldoBraga/1997/11/"><link rel="archives" title="October 1997" href="https://rodbuaiz.github.io/EvaldoBraga/1997/10/"><link rel="archives" title="September 1997" href="https://rodbuaiz.github.io/EvaldoBraga/1997/09/"><link rel="archives" title="May 1973" href="https://rodbuaiz.github.io/EvaldoBraga/1973/05/"><link rel="archives" title="March 1973" href="https://rodbuaiz.github.io/EvaldoBraga/1973/03/"><link rel="archives" title="February 1973" href="https://rodbuaiz.github.io/EvaldoBraga/1973/02/"><link rel="archives" title="November 1972" href="https://rodbuaiz.github.io/EvaldoBraga/1972/11/"><link rel="archives" title="August 1972" href="https://rodbuaiz.github.io/EvaldoBraga/1972/08/"><link rel="archives" title="June 1972" href="https://rodbuaiz.github.io/EvaldoBraga/1972/06/"><link rel="archives" title="March 1972" href="https://rodbuaiz.github.io/EvaldoBraga/1972/03/"><link rel="archives" title="March 1971" href="https://rodbuaiz.github.io/EvaldoBraga/1971/03/"><link rel="dns-prefetch" href="//s.w.org"><link rel="stylesheet" id="wp-block-library-css" href="https://rodbuaiz.github.io/EvaldoBraga/wp-content/block-style.min.css" type="text/css" media="all"><link rel="stylesheet" id="wp-pagenavi-css" href="https://rodbuaiz.github.io/EvaldoBraga/wp-content/pagenavi-css.css" type="text/css" media="all"><link rel="stylesheet" id="lightboxStyle-css" href="https://rodbuaiz.github.io/EvaldoBraga/wp-content/plugins-colorbox.css" type="text/css" media="screen"><script>if (document.location.protocol != "https:") {document.location = document.URL.replace(/^http:/i, "https:");}</script><script type="text/javascript" src="https://rodbuaiz.github.io/EvaldoBraga/wp-content/jquery.js"></script><script type="text/javascript">
+	</style><link rel="archives" title="December 1997" href="https://rodbuaiz.github.io/EvaldoBraga/1997/12/"><link rel="archives" title="November 1997" href="https://rodbuaiz.github.io/EvaldoBraga/1997/11/"><link rel="archives" title="October 1997" href="https://rodbuaiz.github.io/EvaldoBraga/1997/10/"><link rel="archives" title="September 1997" href="https://rodbuaiz.github.io/EvaldoBraga/1997/09/"><link rel="archives" title="May 1973" href="https://rodbuaiz.github.io/EvaldoBraga/1973/05/"><link rel="archives" title="March 1973" href="https://rodbuaiz.github.io/EvaldoBraga/1973/03/"><link rel="archives" title="February 1973" href="https://rodbuaiz.github.io/EvaldoBraga/1973/02/"><link rel="archives" title="November 1972" href="https://rodbuaiz.github.io/EvaldoBraga/1972/11/"><link rel="archives" title="August 1972" href="https://rodbuaiz.github.io/EvaldoBraga/1972/08/"><link rel="archives" title="June 1972" href="https://rodbuaiz.github.io/EvaldoBraga/1972/06/"><link rel="archives" title="March 1972" href="https://rodbuaiz.github.io/EvaldoBraga/1972/03/"><link rel="archives" title="March 1971" href="https://rodbuaiz.github.io/EvaldoBraga/1971/03/"><link rel="dns-prefetch" href="//s.w.org">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" id="wp-block-library-css" href="https://rodbuaiz.github.io/EvaldoBraga/wp-content/block-style.min.css" type="text/css" media="all"><link rel="stylesheet" id="wp-pagenavi-css" href="https://rodbuaiz.github.io/EvaldoBraga/wp-content/pagenavi-css.css" type="text/css" media="all"><link rel="stylesheet" id="lightboxStyle-css" href="https://rodbuaiz.github.io/EvaldoBraga/wp-content/plugins-colorbox.css" type="text/css" media="screen"><script>if (document.location.protocol != "https:") {document.location = document.URL.replace(/^http:/i, "https:");}</script><script type="text/javascript" src="https://rodbuaiz.github.io/EvaldoBraga/wp-content/jquery.js"></script><script type="text/javascript">
 temp_jm_logconsole = window.console.log; window.console.log=null;
 </script><script type="text/javascript" src="https://rodbuaiz.github.io/EvaldoBraga/wp-content/jquery-migrate.min.js"></script><script type="text/javascript">
 window.console.log=temp_jm_logconsole;
@@ -27,9 +29,23 @@ window.console.log=temp_jm_logconsole;
 		
 	//Cufon.now();
 	
-	players = [];
-	function registerSwf(id) {
-	    players.push(id);
+	var players = [];
+	function registerSwf(idswf, mp3) {
+		players.push(idswf);
+		var butz = document.getElementById(idswf);
+		var mySound;
+		butz.addEventListener('click',function(){
+			if(mySound) {
+				if(mySound.paused) { mySound.resume(); butz.innerHTML='<i class="material-icons">pause_circle_outline</i>'; }
+				else { mySound.pause(); butz.innerHTML='<i class="material-icons">play_circle_outline</i>'; }
+			} else {
+				mySound = soundManager.createSound({
+				id: idswf,
+				url: mp3
+				}).play();	
+				butz.innerHTML='<i class="material-icons">pause_circle_outline</i>';
+			}
+		}); 
 	}
 	function stopOthers(from_id) {
 		
@@ -120,7 +136,7 @@ Luiz Benício</p>
 <p><img class="alignnone" title="Lado 1" src="https://rodbuaiz.github.io/EvaldoBraga/files/2010/03/lado1-p1.gif" alt="" width="135" height="30"></p>
 <table style="width: 100%;" border="0" cellspacing="15"><tbody><tr><td>. <a href="https://rodbuaiz.github.io/EvaldoBraga/eu-me-arrependo/">Eu Me Arrependo</a> - 2:58<br>
 (Evaldo Braga / Carmem Lucia)</td>
-<td align="right"><div style="text-align:center; width:72px; height:26px; line-height:26px; margin-left:auto;  background: url(https://rodbuaiz.github.io/EvaldoBraga/wp-content/plugins/wp-swfobject/loading.gif) no-repeat center center; border: 1px solid #E6E6E6;"><div id="swfadcc1"> </div></div>
+<td align="right"><button id="swfadcc1"> </div></div>
 
 <script type="text/javascript">
 	swfobject.embedSWF("https://rodbuaiz.github.io/EvaldoBraga/wp-content/miniplayer.swf?id=1434614193", "swfadcc1", "72", "26", "9.0.0", "", {oMp3: "https://rodbuaiz.github.io/EvaldoBraga/files/2010/03/a1_arrepend.jpg", myID: "swfadcc1"}, {wmode: "window", menu: "false", quality: "best", allowScriptAccess: "always", bgcolor: "#FFFFFF", allowFullScreen: "true"}, {});
@@ -128,7 +144,7 @@ registerSwf("swfadcc1");
 </script></td>
 </tr><tr><td>. <a href="https://rodbuaiz.github.io/EvaldoBraga/por-incrivel-que-pareca/">Por Incrível Que Pareça</a> - 2:55<br>
 (Evaldo Braga / Isaias Souza)</td>
-<td align="right"><div style="text-align:center; width:72px; height:26px; line-height:26px; margin-left:auto;  background: url(https://rodbuaiz.github.io/EvaldoBraga/wp-content/plugins/wp-swfobject/loading.gif) no-repeat center center; border: 1px solid #E6E6E6;"><div id="swfadcc2"> </div></div>
+<td align="right"><button id="swfadcc2"> </div></div>
 
 <script type="text/javascript">
 	swfobject.embedSWF("https://rodbuaiz.github.io/EvaldoBraga/wp-content/miniplayer.swf?id=1904215176", "swfadcc2", "72", "26", "9.0.0", "", {oMp3: "https://rodbuaiz.github.io/EvaldoBraga/files/2010/03/a2_incrivel.jpg", myID: "swfadcc2"}, {wmode: "window", menu: "false", quality: "best", allowScriptAccess: "always", bgcolor: "#FFFFFF", allowFullScreen: "true"}, {});
@@ -136,7 +152,7 @@ registerSwf("swfadcc2");
 </script></td>
 </tr><tr><td>. <a href="https://rodbuaiz.github.io/EvaldoBraga/quisera-eu/">Quisera Eu</a> - 2:36<br>
 (Evaldo Braga / Tuneca)</td>
-<td align="right"><div style="text-align:center; width:72px; height:26px; line-height:26px; margin-left:auto;  background: url(https://rodbuaiz.github.io/EvaldoBraga/wp-content/plugins/wp-swfobject/loading.gif) no-repeat center center; border: 1px solid #E6E6E6;"><div id="swfadcc3"> </div></div>
+<td align="right"><button id="swfadcc3"> </div></div>
 
 <script type="text/javascript">
 	swfobject.embedSWF("https://rodbuaiz.github.io/EvaldoBraga/wp-content/miniplayer.swf?id=8153274", "swfadcc3", "72", "26", "9.0.0", "", {oMp3: "https://rodbuaiz.github.io/EvaldoBraga/files/2010/03/a3_quisera.jpg", myID: "swfadcc3"}, {wmode: "window", menu: "false", quality: "best", allowScriptAccess: "always", bgcolor: "#FFFFFF", allowFullScreen: "true"}, {});
@@ -144,7 +160,7 @@ registerSwf("swfadcc3");
 </script></td>
 </tr><tr><td>. <a href="https://rodbuaiz.github.io/EvaldoBraga/minha-decisao/">Minha Decisão</a> - 3:10<br>
 (Clayton)</td>
-<td align="right"><div style="text-align:center; width:72px; height:26px; line-height:26px; margin-left:auto;  background: url(https://rodbuaiz.github.io/EvaldoBraga/wp-content/plugins/wp-swfobject/loading.gif) no-repeat center center; border: 1px solid #E6E6E6;"><div id="swfadcc4"> </div></div>
+<td align="right"><button id="swfadcc4"> </div></div>
 
 <script type="text/javascript">
 	swfobject.embedSWF("https://rodbuaiz.github.io/EvaldoBraga/wp-content/miniplayer.swf?id=572452878", "swfadcc4", "72", "26", "9.0.0", "", {oMp3: "https://rodbuaiz.github.io/EvaldoBraga/files/2010/03/a4_decisao.jpg", myID: "swfadcc4"}, {wmode: "window", menu: "false", quality: "best", allowScriptAccess: "always", bgcolor: "#FFFFFF", allowFullScreen: "true"}, {});
@@ -155,7 +171,7 @@ registerSwf("swfadcc4");
 <td align="right"></td>
 </tr><tr><td>. <a href="https://rodbuaiz.github.io/EvaldoBraga/por-uma-vez-mais/">Por Uma Vez Mais</a> - 3:30<br>
 (Nenéo)</td>
-<td align="right"><div style="text-align:center; width:72px; height:26px; line-height:26px; margin-left:auto;  background: url(https://rodbuaiz.github.io/EvaldoBraga/wp-content/plugins/wp-swfobject/loading.gif) no-repeat center center; border: 1px solid #E6E6E6;"><div id="swfadcc5"> </div></div>
+<td align="right"><button id="swfadcc5"> </div></div>
 
 <script type="text/javascript">
 	swfobject.embedSWF("https://rodbuaiz.github.io/EvaldoBraga/wp-content/miniplayer.swf?id=870252579", "swfadcc5", "72", "26", "9.0.0", "", {oMp3: "https://rodbuaiz.github.io/EvaldoBraga/files/2010/03/a6_porumave.jpg", myID: "swfadcc5"}, {wmode: "window", menu: "false", quality: "best", allowScriptAccess: "always", bgcolor: "#FFFFFF", allowFullScreen: "true"}, {});
@@ -163,7 +179,7 @@ registerSwf("swfadcc5");
 </script></td>
 </tr><tr><td>. <a href="https://rodbuaiz.github.io/EvaldoBraga/eu-desta-vez-vou-te-esquecer/">Eu Desta Vez Vou Te Esquecer</a> (Lucky People) - 2:15<br>
 (A. Chinick / Versão: Sebastião Ferreira)</td>
-<td align="right"><div style="text-align:center; width:72px; height:26px; line-height:26px; margin-left:auto;  background: url(https://rodbuaiz.github.io/EvaldoBraga/wp-content/plugins/wp-swfobject/loading.gif) no-repeat center center; border: 1px solid #E6E6E6;"><div id="swfadcc6"> </div></div>
+<td align="right"><button id="swfadcc6"> </div></div>
 
 <script type="text/javascript">
 	swfobject.embedSWF("https://rodbuaiz.github.io/EvaldoBraga/wp-content/miniplayer.swf?id=677681967", "swfadcc6", "72", "26", "9.0.0", "", {oMp3: "https://rodbuaiz.github.io/EvaldoBraga/files/2010/03/a1_destavez.jpg", myID: "swfadcc6"}, {wmode: "window", menu: "false", quality: "best", allowScriptAccess: "always", bgcolor: "#FFFFFF", allowFullScreen: "true"}, {});
@@ -172,7 +188,7 @@ registerSwf("swfadcc6");
 </tr></tbody></table><p><img class="alignnone" title="Lado 2" src="https://rodbuaiz.github.io/EvaldoBraga/files/2010/03/lado2-p1.gif" alt="" width="135" height="30"></p>
 <table style="width: 100%;" border="0" cellspacing="15"><tbody><tr><td>. <a href="https://rodbuaiz.github.io/EvaldoBraga/eu-ainda-amo-voces/">Eu Ainda Amo Vocês</a> - 3:58<br>
 (Hailton Ferreira / Ana Maria)</td>
-<td align="right"><div style="text-align:center; width:72px; height:26px; line-height:26px; margin-left:auto;  background: url(https://rodbuaiz.github.io/EvaldoBraga/wp-content/plugins/wp-swfobject/loading.gif) no-repeat center center; border: 1px solid #E6E6E6;"><div id="swfadcc7"> </div></div>
+<td align="right"><button id="swfadcc7"> </div></div>
 
 <script type="text/javascript">
 	swfobject.embedSWF("https://rodbuaiz.github.io/EvaldoBraga/wp-content/miniplayer.swf?id=1939942060", "swfadcc7", "72", "26", "9.0.0", "", {oMp3: "https://rodbuaiz.github.io/EvaldoBraga/files/2010/03/b1_indamo.jpg", myID: "swfadcc7"}, {wmode: "window", menu: "false", quality: "best", allowScriptAccess: "always", bgcolor: "#FFFFFF", allowFullScreen: "true"}, {});
@@ -180,7 +196,7 @@ registerSwf("swfadcc7");
 </script></td>
 </tr><tr><td>. <a href="https://rodbuaiz.github.io/EvaldoBraga/meu-delicado-drama/">Meu Delicado Drama</a> - 2:42<br>
 (Isaias Souza)</td>
-<td align="right"><div style="text-align:center; width:72px; height:26px; line-height:26px; margin-left:auto;  background: url(https://rodbuaiz.github.io/EvaldoBraga/wp-content/plugins/wp-swfobject/loading.gif) no-repeat center center; border: 1px solid #E6E6E6;"><div id="swfadcc8"> </div></div>
+<td align="right"><button id="swfadcc8"> </div></div>
 
 <script type="text/javascript">
 	swfobject.embedSWF("https://rodbuaiz.github.io/EvaldoBraga/wp-content/miniplayer.swf?id=211869579", "swfadcc8", "72", "26", "9.0.0", "", {oMp3: "https://rodbuaiz.github.io/EvaldoBraga/files/2010/03/a4_drama.jpg", myID: "swfadcc8"}, {wmode: "window", menu: "false", quality: "best", allowScriptAccess: "always", bgcolor: "#FFFFFF", allowFullScreen: "true"}, {});
@@ -188,7 +204,7 @@ registerSwf("swfadcc8");
 </script></td>
 </tr><tr><td>. <a href="https://rodbuaiz.github.io/EvaldoBraga/por-que-razao/">Porque Razão</a> - 2:52<br>
 (Hailton Ferreira)</td>
-<td align="right"><div style="text-align:center; width:72px; height:26px; line-height:26px; margin-left:auto;  background: url(https://rodbuaiz.github.io/EvaldoBraga/wp-content/plugins/wp-swfobject/loading.gif) no-repeat center center; border: 1px solid #E6E6E6;"><div id="swfadcc9"> </div></div>
+<td align="right"><button id="swfadcc9"> </div></div>
 
 <script type="text/javascript">
 	swfobject.embedSWF("https://rodbuaiz.github.io/EvaldoBraga/wp-content/miniplayer.swf?id=760375464", "swfadcc9", "72", "26", "9.0.0", "", {oMp3: "https://rodbuaiz.github.io/EvaldoBraga/files/2010/03/a3_pqrazao.jpg", myID: "swfadcc9"}, {wmode: "window", menu: "false", quality: "best", allowScriptAccess: "always", bgcolor: "#FFFFFF", allowFullScreen: "true"}, {});
@@ -196,7 +212,7 @@ registerSwf("swfadcc9");
 </script></td>
 </tr><tr><td>. <a href="https://rodbuaiz.github.io/EvaldoBraga/a-cruz-que-carrego/">A Cruz Que Carrego</a> - 2:24<br>
 (Isaias Souza)</td>
-<td align="right"><div style="text-align:center; width:72px; height:26px; line-height:26px; margin-left:auto;  background: url(https://rodbuaiz.github.io/EvaldoBraga/wp-content/plugins/wp-swfobject/loading.gif) no-repeat center center; border: 1px solid #E6E6E6;"><div id="swfadcc10"> </div></div>
+<td align="right"><button id="swfadcc10"> </div></div>
 
 <script type="text/javascript">
 	swfobject.embedSWF("https://rodbuaiz.github.io/EvaldoBraga/wp-content/miniplayer.swf?id=404265199", "swfadcc10", "72", "26", "9.0.0", "", {oMp3: "https://rodbuaiz.github.io/EvaldoBraga/files/2010/03/b4_cruz.jpg", myID: "swfadcc10"}, {wmode: "window", menu: "false", quality: "best", allowScriptAccess: "always", bgcolor: "#FFFFFF", allowFullScreen: "true"}, {});
@@ -204,7 +220,7 @@ registerSwf("swfadcc10");
 </script></td>
 </tr><tr><td>. <a href="https://rodbuaiz.github.io/EvaldoBraga/noite-cheia-de-estrelas/">Noite Cheia de Estrelas</a> - 3:00<br>
 (Cândido das Neves "Índio")</td>
-<td align="right"><div style="text-align:center; width:72px; height:26px; line-height:26px; margin-left:auto;  background: url(https://rodbuaiz.github.io/EvaldoBraga/wp-content/plugins/wp-swfobject/loading.gif) no-repeat center center; border: 1px solid #E6E6E6;"><div id="swfadcc11"> </div></div>
+<td align="right"><button id="swfadcc11"> </div></div>
 
 <script type="text/javascript">
 	swfobject.embedSWF("https://rodbuaiz.github.io/EvaldoBraga/wp-content/miniplayer.swf?id=580863147", "swfadcc11", "72", "26", "9.0.0", "", {oMp3: "https://rodbuaiz.github.io/EvaldoBraga/files/2010/03/a6_noiteche.jpg", myID: "swfadcc11"}, {wmode: "window", menu: "false", quality: "best", allowScriptAccess: "always", bgcolor: "#FFFFFF", allowFullScreen: "true"}, {});
@@ -212,7 +228,7 @@ registerSwf("swfadcc11");
 </script></td>
 </tr><tr><td>. <a href="https://rodbuaiz.github.io/EvaldoBraga/nunca-mais-nunca-mais/">Nunca Mais, Nunca Mais</a> - 2:35<br>
 (Evaldo Braga / Cezão)</td>
-<td align="right"><div style="text-align:center; width:72px; height:26px; line-height:26px; margin-left:auto;  background: url(https://rodbuaiz.github.io/EvaldoBraga/wp-content/plugins/wp-swfobject/loading.gif) no-repeat center center; border: 1px solid #E6E6E6;"><div id="swfadcc12"> </div></div>
+<td align="right"><button id="swfadcc12"> </div></div>
 
 <script type="text/javascript">
 	swfobject.embedSWF("https://rodbuaiz.github.io/EvaldoBraga/wp-content/miniplayer.swf?id=273251671", "swfadcc12", "72", "26", "9.0.0", "", {oMp3: "https://rodbuaiz.github.io/EvaldoBraga/files/2010/03/b6_nuncamai.jpg", myID: "swfadcc12"}, {wmode: "window", menu: "false", quality: "best", allowScriptAccess: "always", bgcolor: "#FFFFFF", allowFullScreen: "true"}, {});
@@ -220,11 +236,10 @@ registerSwf("swfadcc12");
 </script></td>
 </tr><tr><td>. <a href="https://rodbuaiz.github.io/EvaldoBraga/eu-nao-sou-lixo/">Eu Não Sou Lixo</a> - 2:24<br>
 (Evaldo Braga / Pantera / Carmem Lucia)</td>
-<td align="right"><div style="text-align:center; width:72px; height:26px; line-height:26px; margin-left:auto;  background: url(https://rodbuaiz.github.io/EvaldoBraga/wp-content/plugins/wp-swfobject/loading.gif) no-repeat center center; border: 1px solid #E6E6E6;"><div id="swfadcc13"> </div></div>
+<td align="right"><button id="swfadcc13"> <i class="material-icons">play_circle_outline</i></button>
 
 <script type="text/javascript">
-	swfobject.embedSWF("https://rodbuaiz.github.io/EvaldoBraga/wp-content/miniplayer.swf?id=1161283133", "swfadcc13", "72", "26", "9.0.0", "", {oMp3: "https://rodbuaiz.github.io/EvaldoBraga/files/2010/03/a2_lixo.jpg", myID: "swfadcc13"}, {wmode: "window", menu: "false", quality: "best", allowScriptAccess: "always", bgcolor: "#FFFFFF", allowFullScreen: "true"}, {});
-registerSwf("swfadcc13");
+registerSwf("swfadcc13","https://rodbuaiz.github.io/EvaldoBraga/files/2010/03/a2_lixo.jpg");
 </script></td>
 </tr></tbody></table><p><strong>Texto da contracapa:</strong></p>
 <blockquote><p>Dedicatória - Disco Póstumo</p>
