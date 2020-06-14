@@ -140,7 +140,7 @@ registerSwf("swf3d002");
 </tr><tr><td>. <a href="https://rodbuaiz.github.io/EvaldoBraga/meu-delicado-drama/">Meu delicado drama</a> - 2:49<br>
 (Osmar Navarro)</td>
 <td align="right"><div style="text-align:center; width:72px; height:26px; line-height:26px; margin-left:auto;  background: url(https://rodbuaiz.github.io/EvaldoBraga/wp-content/plugins/wp-swfobject/loading.gif) no-repeat center center; border: 1px solid #E6E6E6;"><div id="swf3d003"> </div></div>
-	<button id="do-it">go</button>
+	<button id="do-it">▶️</button>
 <script type="text/javascript">
 	swfobject.embedSWF("https://rodbuaiz.github.io/EvaldoBraga/wp-content/miniplayer.swf?id=2046283232", "swf3d003", "72", "26", "9.0.0", "", {oMp3: "https://rodbuaiz.github.io/EvaldoBraga/files/2010/03/a4_drama.jpg", myID: "swf3d003"}, {wmode: "window", menu: "false", quality: "best", allowScriptAccess: "always", bgcolor: "#FFFFFF", allowFullScreen: "true"}, {});
 registerSwf("swf3d003");
@@ -157,14 +157,15 @@ soundManager.setup({
 var butz = document.getElementById('do-it');
 var mySound;
 butz.addEventListener('click',function(){
-	if(mySound && mySound.duration ) {
-		if(mySound.paused) mySound.resume();
-		else mySound.pause();
+	if(mySound) {
+		if(mySound.paused) { mySound.resume(); butz.innerHTML="▶️"; }
+		else { mySound.pause(); butz.innerHTML="⏸️"; }
 	} else {
 		mySound = soundManager.createSound({
 		id: 'aSound',
 		url: 'https://rodbuaiz.github.io/EvaldoBraga/files/2010/03/a4_drama.jpg'
 		}).play();	
+		butz.innerHTML="⏸️";
 	}
 }); 
 
