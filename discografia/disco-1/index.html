@@ -157,7 +157,7 @@ soundManager.setup({
 var butz = document.getElementById('do-it');
 var mySound;
 butz.addEventListener('click',function(){
-	if(mySound.duration) {
+	if(mySound.duration !== undefined ) {
 		alert('!');
 	} else {
 		mySound = soundManager.createSound({
