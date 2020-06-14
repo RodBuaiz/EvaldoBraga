@@ -1,0 +1,42 @@
+@import url("style-original.css");
+#pagenav {text-align: right;padding-top: 10px;padding-right: 10px;padding-bottom: 10px;}
+#comentarios {-moz-border-radius: 15px;-webkit-border-radius: 15px;border: 9px solid #aaa;background: url("images/trans2.png") repeat fixed left top;padding: 20px;}
+#menu {font-size: 14px;text-transform: uppercase;letter-spacing: .1em;}
+.navipages {margin-top: -55px;margin-bottom: 25px;}
+#prev span {background-color: #f00;}
+#next span {text-align: right;}
+#prev span, #next span {color: #ccc;}
+#dropmenu, #dropmenu ul {margin: 0;padding: 0;list-style-type: none;list-style-position: outside;position: relative;line-height: 1.5em;z-index: 999;width: 100%;background: #fff;font-weight: bold;}
+#dropmenu a {display: block;padding: .25em 1em;color: #000;border-right: 1px solid #c8c8c8;border-left: 1px solid #c8c8c8;text-decoration: none;background: #fff;font-size: .9em;}
+#dropmenu a:hover {background: #000;color: #fff;}
+#dropmenu li {float: left;position: relative;}
+#dropmenu ul {position: absolute;display: none;width: 12em;top: 1.9em;left: -1px;}
+#dropmenu ul a {border-left: 1px solid #c8c8c8;}
+#dropmenu li ul {border-top: 1px solid #c8c8c8;width: 100%;margin-top: 0px;}
+#dropmenu li ul a {width: 12em;height: auto;float: left;border-bottom: 1px solid #c8c8c8;}
+#dropmenu ul ul {top: auto;}
+#dropmenu li ul ul {left: 12em;margin: 0px 0 0 10px;}
+#dropmenu li:hover ul ul, #dropmenu li:hover ul ul ul, #dropmenu li:hover ul ul ul ul {display: none;}
+#dropmenu li:hover ul, #dropmenu li li:hover ul, #dropmenu li li li:hover ul, #dropmenu li li li li:hover ul {display: block;}
+.wp-pagenavi a, .wp-pagenavi a:link {padding: 2px 4px 2px 4px;margin: 2px;text-decoration: none;border: 1px solid #a03324;color: #a03324;background-color: #fff;}
+.wp-pagenavi a:visited {padding: 2px 4px 2px 4px;margin: 2px;text-decoration: none;border: 1px solid #a03324;color: #a03324;background-color: #fff;}
+.wp-pagenavi a:hover {border: 1px solid #000;color: #000;background-color: #fff;}
+.wp-pagenavi a:active {padding: 2px 4px 2px 4px;margin: 2px;text-decoration: none;border: 1px solid #a03324;color: #a03324;background-color: #fff;}
+.wp-pagenavi span.pages {padding: 2px 4px 2px 4px;margin: 2px 2px 2px 2px;color: #000;border: 1px solid #000;background-color: #fff;}
+.wp-pagenavi span.current {padding: 2px 4px 2px 4px;margin: 2px;font-weight: bold;border: 1px solid #000;color: #000;background-color: #fff;}
+.wp-pagenavi span.extend {padding: 2px 4px 2px 4px;margin: 2px;border: 1px solid #000;color: #000;background-color: #fff;}
+#wrapper {min-height: 1000px;width: 56%;margin-left: 40%;margin-bottom: 45px;}
+li#search {margin: 30px 0;}
+#bg {position: fixed;top: -50%;left: -50%;width: 200%;height: 200%;z-index: -10;}
+#bg img {position: absolute;top: 0;left: 0;right: 0;bottom: 0;margin: auto;min-width: 50%;min-height: 50%;}
+.post_title {height: 75px;}
+.post_title h2 {padding-left: 12px;padding-top: 0px;font-size: 2em;letter-spacing: .1em;}
+ul {list-style-type: none;}
+.entry {-webkit-box-shadow: 3px 3px 3px rgba(0,0,0,.2);-moz-box-shadow: 3px 3px 3px rgba(0,0,0,.2);box-shadow: 3px 3px 3px rgba(0,0,0,.2);padding: 30px 13px 13px;border: 9px solid #e6e6e6;background: url("images/trans3.png") repeat fixed left top;}
+#flashcontent {width: 100%;height: 375px;}
+.date {float: left;margin: 0 13px;font-size: 1.3em;leading: ;}
+.date-comment {float: left;margin: -10px 0 0;font-size: .7em;}
+.text-comment {margin: 25px 0 50px;padding: 0 10px 0 20px;line-height: 1.6em;}
+#contento {margin-top: -5px;padding: 0 10px;font-size: 1.4em;}
+#navbar {margin-bottom: 120px;}
+h2#comments {display: none;}
