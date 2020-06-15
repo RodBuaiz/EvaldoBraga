@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><feed
-	xmlns="http://www.w3.org/2005/Atom"
+	xmlns="https://www.w3.org/2005/Atom"
 	xmlns:thr="http://purl.org/syndication/thread/1.0"
 	xml:lang="en-US"
 	xml:base="https://evaldobraga.com/wp-atom.php"
@@ -22,7 +22,7 @@
 		<title type="html"><![CDATA[Avant Premiére]]></title>
 		<link rel="alternate" type="text/html" href="https://evaldobraga.com/avant-premiere/" />
 
-		<id>https://rodbuaiz.github.io/EvaldoBraga/?p=51</id>
+		<id>https://evaldobraga.com/?p=51</id>
 		<updated>2011-03-07T21:36:44Z</updated>
 		<published>1997-12-05T00:00:00Z</published>
 		<category scheme="https://evaldobraga.com" term="Eventos" /><category scheme="https://evaldobraga.com" term="anos setenta" /><category scheme="https://evaldobraga.com" term="ismael" /><category scheme="https://evaldobraga.com" term="josé geraldo" /><category scheme="https://evaldobraga.com" term="leandro silva" /><category scheme="https://evaldobraga.com" term="luiz fernando" /><category scheme="https://evaldobraga.com" term="maravilha" /><category scheme="https://evaldobraga.com" term="mascarenhas" /><category scheme="https://evaldobraga.com" term="mastur" /><category scheme="https://evaldobraga.com" term="verbo" />
@@ -38,7 +38,7 @@
 		<title type="html"><![CDATA[Recordando Evaldo Braga]]></title>
 		<link rel="alternate" type="text/html" href="https://evaldobraga.com/recordando-evaldo-braga/" />
 
-		<id>https://rodbuaiz.github.io/EvaldoBraga/?p=53</id>
+		<id>https://evaldobraga.com/?p=53</id>
 		<updated>2011-03-06T04:56:53Z</updated>
 		<published>1997-12-04T00:00:00Z</published>
 		<category scheme="https://evaldobraga.com" term="Clipping do projeto" /><category scheme="https://evaldobraga.com" term="31 de janeiro" /><category scheme="https://evaldobraga.com" term="abud" /><category scheme="https://evaldobraga.com" term="belo horizonte" /><category scheme="https://evaldobraga.com" term="braga" /><category scheme="https://evaldobraga.com" term="contrabaixo" /><category scheme="https://evaldobraga.com" term="leandro silva" /><category scheme="https://evaldobraga.com" term="mastur" /><category scheme="https://evaldobraga.com" term="mike ryan" /><category scheme="https://evaldobraga.com" term="saxofone" /><category scheme="https://evaldobraga.com" term="três rios" />
@@ -54,7 +54,7 @@
 		<title type="html"><![CDATA[Show hoje à noite comemoraos 50 anos do cantor]]></title>
 		<link rel="alternate" type="text/html" href="https://evaldobraga.com/show-hoje-a-noite-comemora/" />
 
-		<id>https://rodbuaiz.github.io/EvaldoBraga/?p=48</id>
+		<id>https://evaldobraga.com/?p=48</id>
 		<updated>2011-03-06T04:19:03Z</updated>
 		<published>1997-12-04T00:00:00Z</published>
 		<category scheme="https://evaldobraga.com" term="Clipping do projeto" /><category scheme="https://evaldobraga.com" term="ana paula" /><category scheme="https://evaldobraga.com" term="estudantes" /><category scheme="https://evaldobraga.com" term="leandro silva" /><category scheme="https://evaldobraga.com" term="mastur" /><category scheme="https://evaldobraga.com" term="meias" /><category scheme="https://evaldobraga.com" term="mike ryan" /><category scheme="https://evaldobraga.com" term="orlandi" /><category scheme="https://evaldobraga.com" term="popular brasileira" /><category scheme="https://evaldobraga.com" term="universidade federal" /><category scheme="https://evaldobraga.com" term="valter" />
@@ -70,7 +70,7 @@
 		<title type="html"><![CDATA[Apresentação acadêmica do documentário]]></title>
 		<link rel="alternate" type="text/html" href="https://evaldobraga.com/apresentacao-academica-do-documentario/" />
 
-		<id>https://rodbuaiz.github.io/EvaldoBraga/?p=54</id>
+		<id>https://evaldobraga.com/?p=54</id>
 		<updated>2011-03-06T04:19:03Z</updated>
 		<published>1997-11-28T00:00:00Z</published>
 		<category scheme="https://evaldobraga.com" term="Eventos" /><category scheme="https://evaldobraga.com" term="ufmg" /><category scheme="https://evaldobraga.com" term="viegas" />
@@ -86,7 +86,7 @@
 		<title type="html"><![CDATA[Belo Horizonte comemora 50 anosdo líder negro Evaldo Braga]]></title>
 		<link rel="alternate" type="text/html" href="https://evaldobraga.com/belo-horizonte-comemora-50-anos/" />
 
-		<id>https://rodbuaiz.github.io/EvaldoBraga/?p=50</id>
+		<id>https://evaldobraga.com/?p=50</id>
 		<updated>2011-03-06T04:19:03Z</updated>
 		<published>1997-10-03T00:00:00Z</published>
 		<category scheme="https://evaldobraga.com" term="Clipping do projeto" /><category scheme="https://evaldobraga.com" term="agencia folha" /><category scheme="https://evaldobraga.com" term="belo horizonte" /><category scheme="https://evaldobraga.com" term="cantores" /><category scheme="https://evaldobraga.com" term="carlos henrique" /><category scheme="https://evaldobraga.com" term="colet" /><category scheme="https://evaldobraga.com" term="fim de semana" /><category scheme="https://evaldobraga.com" term="menor abandonado" /><category scheme="https://evaldobraga.com" term="mineira" />
@@ -102,7 +102,7 @@
 		<title type="html"><![CDATA[It&#039;s only Evaldo Braga]]></title>
 		<link rel="alternate" type="text/html" href="https://evaldobraga.com/its-only-evaldo-braga/" />
 
-		<id>https://rodbuaiz.github.io/EvaldoBraga/?p=49</id>
+		<id>https://evaldobraga.com/?p=49</id>
 		<updated>2011-03-06T04:19:03Z</updated>
 		<published>1997-09-27T00:01:00Z</published>
 		<category scheme="https://evaldobraga.com" term="Eventos" /><category scheme="https://evaldobraga.com" term="50 anos" /><category scheme="https://evaldobraga.com" term="bateria" /><category scheme="https://evaldobraga.com" term="contrabaixo" /><category scheme="https://evaldobraga.com" term="guitarra" /><category scheme="https://evaldobraga.com" term="marcelo" /><category scheme="https://evaldobraga.com" term="mike ryan" /><category scheme="https://evaldobraga.com" term="pelos" /><category scheme="https://evaldobraga.com" term="saxofone" /><category scheme="https://evaldobraga.com" term="silva" /><category scheme="https://evaldobraga.com" term="valter" />
@@ -118,7 +118,7 @@
 		<title type="html"><![CDATA[Uma homenagem em vídeo e show]]></title>
 		<link rel="alternate" type="text/html" href="https://evaldobraga.com/uma-homenagem-em-video-e-show/" />
 
-		<id>https://rodbuaiz.github.io/EvaldoBraga/?p=52</id>
+		<id>https://evaldobraga.com/?p=52</id>
 		<updated>2011-03-06T04:19:03Z</updated>
 		<published>1997-09-27T00:00:00Z</published>
 		<category scheme="https://evaldobraga.com" term="Clipping do projeto" /><category scheme="https://evaldobraga.com" term="31 de janeiro" /><category scheme="https://evaldobraga.com" term="abud" /><category scheme="https://evaldobraga.com" term="braga" /><category scheme="https://evaldobraga.com" term="brega" /><category scheme="https://evaldobraga.com" term="completando" /><category scheme="https://evaldobraga.com" term="homenagem ao" /><category scheme="https://evaldobraga.com" term="jornal estado de minas" /><category scheme="https://evaldobraga.com" term="mastur" /><category scheme="https://evaldobraga.com" term="neste domingo" /><category scheme="https://evaldobraga.com" term="rio de janeiro" />
@@ -134,7 +134,7 @@
 		<title type="html"><![CDATA[Amiga é uma parada]]></title>
 		<link rel="alternate" type="text/html" href="https://evaldobraga.com/amiga-e-uma-parada/" />
 
-		<id>https://rodbuaiz.github.io/EvaldoBraga/?p=55</id>
+		<id>https://evaldobraga.com/?p=55</id>
 		<updated>2011-03-06T04:19:03Z</updated>
 		<published>1973-05-01T00:00:00Z</published>
 		<category scheme="https://evaldobraga.com" term="Jornais e Revistas" /><category scheme="https://evaldobraga.com" term="amiga" /><category scheme="https://evaldobraga.com" term="duplos" />
@@ -150,7 +150,7 @@
 		<title type="html"><![CDATA[Eu ainda amo vocês]]></title>
 		<link rel="alternate" type="text/html" href="https://evaldobraga.com/eu-ainda-amo-voces/" />
 
-		<id>https://rodbuaiz.github.io/EvaldoBraga/?p=98</id>
+		<id>https://evaldobraga.com/?p=98</id>
 		<updated>2011-03-07T13:38:28Z</updated>
 		<published>1973-03-22T14:37:34Z</published>
 		<category scheme="https://evaldobraga.com" term="Letras" /><category scheme="https://evaldobraga.com" term="adeus" /><category scheme="https://evaldobraga.com" term="ainda amo" /><category scheme="https://evaldobraga.com" term="caminhada" /><category scheme="https://evaldobraga.com" term="disco 4" /><category scheme="https://evaldobraga.com" term="foram" /><category scheme="https://evaldobraga.com" term="ironia" /><category scheme="https://evaldobraga.com" term="maior amor do mundo" /><category scheme="https://evaldobraga.com" term="meus sonhos" /><category scheme="https://evaldobraga.com" term="nascer" /><category scheme="https://evaldobraga.com" term="velocidade" />
@@ -166,13 +166,13 @@
 		<title type="html"><![CDATA[Eu Me Arrependo]]></title>
 		<link rel="alternate" type="text/html" href="https://evaldobraga.com/eu-me-arrependo/" />
 
-		<id>https://rodbuaiz.github.io/EvaldoBraga/?p=94</id>
+		<id>https://evaldobraga.com/?p=94</id>
 		<updated>2011-03-06T11:36:51Z</updated>
 		<published>1973-03-22T14:37:33Z</published>
 		<category scheme="https://evaldobraga.com" term="Letras" /><category scheme="https://evaldobraga.com" term="amor" /><category scheme="https://evaldobraga.com" term="disco 4" /><category scheme="https://evaldobraga.com" term="minha vida" /><category scheme="https://evaldobraga.com" term="por favor" /><category scheme="https://evaldobraga.com" term="pra mim" /><category scheme="https://evaldobraga.com" term="sei" />
 		<summary type="html"><![CDATA[Quem é Que a toda hora Lembra sempre de você Meu grande amor Quem é Que te implora Volte agora Volte agora, por favor Não sei Se queres me ver Morrendo só Morrendo só, por seu amor A vida Sem você querida Pra mim não tem Pra mim não tem, nenhum valor Eu me arrependo,... <a href="https://evaldobraga.com/eu-me-arrependo/">[ + ]</a>]]></summary>
 
 		
-		<link href="https://rodbuaiz.github.io/EvaldoBraga/files/2010/03/a1_arrepend.mp3" rel="enclosure" length="2491764" type="audio/mpeg" />
+		<link href="https://evaldobraga.com/files/2010/03/a1_arrepend.mp3" rel="enclosure" length="2491764" type="audio/mpeg" />
 	</entry>
 	</feed>
